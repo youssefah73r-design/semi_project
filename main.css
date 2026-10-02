@@ -1,0 +1,429 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  }
+
+body {
+font-family: "Poppins", sans-serif;
+color: #25434d;
+}
+
+a {
+text-decoration: none;
+color: inherit;
+}
+
+header {
+display: flex;
+justify-content: space-between;
+align-items: center;
+padding: 15px 7%;
+}
+
+.logo {
+color: #183e49;
+font-size: 18px;
+font-weight: bold;
+}
+
+.logo span {
+color: white;
+background: #ff8750;
+padding: 5px;
+border-radius: 6px;
+}
+
+nav {
+display: flex;
+gap: 22px;
+font-size: 13px;
+}
+
+.button {
+display: inline-block;
+background: #ff8750;
+color: white;
+padding: 10px 18px;
+border-radius: 6px;
+font-size: 12px;
+}
+
+.hero {
+padding: 65px 9%;
+color: white;
+background: linear-gradient(90deg, #183e49, #526d73);
+}
+
+.hero-text {
+max-width: 480px;
+}
+
+.orange {
+color: #ff8750;
+font-size: 10px;
+font-weight: bold;
+}
+
+.hero h1 {
+font-size: 36px;
+margin: 10px 0;
+}
+
+.hero h1 span,
+.title h2 span {
+color: #ff8750;
+}
+
+.hero-text > p:not(.orange) {
+font-size: 13px;
+margin-bottom: 20px;
+}
+
+.popular {
+background: #f5f8f8;
+padding: 40px 6%;
+}
+
+.title {
+text-align: center;
+margin-bottom: 25px;
+}
+
+.title h2 {
+color: #183e49;
+font-size: 25px;
+margin: 5px 0;
+}
+
+.title > p:last-child {
+color: #7e9095;
+font-size: 12px;
+}
+
+.route-list,
+.destination-list {
+display: grid;
+grid-template-columns: repeat(3, 1fr);
+gap: 15px;
+}
+
+.route-card {
+border: 1px solid #e5eaea;
+border-radius: 8px;
+overflow: hidden;
+background: white;
+}
+
+.route-card img {
+width: 100%;
+height: 125px;
+object-fit: cover;
+display: block;
+}
+
+.card-info {
+padding: 10px;
+font-size: 11px;
+}
+
+.card-heading {
+display: flex;
+justify-content: space-between;
+}
+
+.price {
+color: #269b87;
+}
+
+.card-info p {
+margin: 5px 0;
+color: #7e9095;
+}
+
+.card-info a {
+color: #183e49;
+font-size: 10px;
+}
+
+.destinations {
+padding: 40px 6%;
+}
+
+.destination-card {
+height: 180px;
+position: relative;
+border-radius: 9px;
+overflow: hidden;
+}
+
+.destination-card img {
+width: 100%;
+height: 100%;
+object-fit: cover;
+}
+
+.destination-info {
+position: absolute;
+bottom: 0;
+left: 0;
+width: 100%;
+padding: 25px 12px 10px;
+color: white;
+background: linear-gradient(transparent, #222);
+}
+
+.destination-info span {
+background: white;
+color: #183e49;
+padding: 3px 7px;
+border-radius: 4px;
+font-size: 9px;
+}
+
+.destination-info h3 {
+margin-top: 5px;
+font-size: 15px;
+}
+
+.destination-info p {
+font-size: 10px;
+}
+
+.booking {
+display: grid;
+grid-template-columns: 1fr 1.5fr;
+max-width: 1000px;
+margin: 0 auto 40px;
+overflow: hidden;
+border-radius: 10px;
+}
+
+.booking img {
+width: 100%;
+height: 210px;
+object-fit: cover;
+}
+
+.booking-text {
+background: #183e49;
+color: white;
+text-align: center;
+padding: 28px;
+}
+
+.booking-text h2 {
+font-size: 25px;
+margin: 8px 0;
+}
+
+.booking-text > p:not(.orange) {
+font-size: 11px;
+margin-bottom: 15px;
+}
+
+.reviews {
+border: 1px solid #1684d5;
+margin: 0 auto 40px;
+max-width: 1000px;
+padding: 25px 20px;
+}
+
+.review-list {
+display: grid;
+grid-template-columns: repeat(4, 1fr);
+gap: 12px;
+}
+
+.review-card {
+padding: 15px;
+border: 1px solid #eee;
+border-radius: 8px;
+font-size: 11px;
+}
+
+.quote {
+color: #ff8750;
+font-size: 25px;
+}
+
+.review-card p {
+color: #7e9095;
+margin: 8px 0;
+}
+
+.review-card small {
+display: block;
+color: #f2a53b;
+margin-top: 5px;
+}
+
+footer {
+display: grid;
+grid-template-columns: 1.5fr 1fr 1fr 1.3fr;
+gap: 25px;
+padding: 35px 7%;
+background: #123640;
+color: white;
+font-size: 11px;
+}
+
+footer h4 {
+margin-bottom: 12px;
+}
+
+footer a:not(.logo) {
+display: block;
+margin: 7px 0;
+color: #c3d0d2;
+}
+
+footer p {
+color: #c3d0d2;
+margin: 8px 0;
+}
+
+footer input {
+width: 70%;
+padding: 8px;
+}
+
+footer button {
+padding: 8px;
+border: 0;
+background: #ff8750;
+color: white;
+cursor: pointer;
+}
+
+/* Tablet */
+
+@media (max-width: 900px) {
+header {
+padding: 15px 4%;
+}
+
+.popular,
+.destinations {
+    padding: 35px 4%;
+}
+
+.route-list,
+.destination-list {
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.review-list {
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.booking {
+    margin: 0 4% 40px;
+}
+
+footer {
+    grid-template-columns: repeat(2, 1fr);
+}
+
+}
+
+/* Mobile */
+
+@media (max-width: 600px) {
+header {
+flex-wrap: wrap;
+gap: 15px;
+padding: 15px 5%;
+}
+
+nav {
+    order: 3;
+    width: 100%;
+    justify-content: space-between;
+    gap: 10px;
+    font-size: 12px;
+}
+
+.button {
+    padding: 8px 12px;
+}
+
+.hero {
+    padding: 50px 6%;
+}
+
+.hero h1 {
+    font-size: 28px;
+}
+
+.hero-text {
+    max-width: 100%;
+}
+
+.route-list,
+.destination-list {
+    grid-template-columns: 1fr;
+}
+
+.route-card img {
+    height: 180px;
+}
+
+.destination-card {
+    height: 220px;
+}
+
+.booking {
+    grid-template-columns: 1fr;
+    margin: 0 5% 35px;
+}
+
+.booking img {
+    height: 200px;
+}
+
+.booking-text {
+    padding: 25px 15px;
+}
+
+.booking-text h2 {
+    font-size: 22px;
+}
+
+.reviews {
+    margin: 0 5% 35px;
+    padding: 20px 12px;
+}
+
+.review-list {
+    grid-template-columns: 1fr;
+}
+
+footer {
+    grid-template-columns: 1fr;
+    padding: 30px 7%;
+    gap: 20px;
+}
+
+}
+
+/* Small Mobile */
+
+@media (max-width: 350px) {
+.hero h1 {
+font-size: 24px;
+}
+
+nav {
+    font-size: 10px;
+}
+
+.title h2 {
+    font-size: 21px;
+}
+
+.route-card img {
+    height: 150px;
+}
+
+}
